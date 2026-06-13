@@ -152,6 +152,27 @@ footer .meta{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-tra
 .assets .a:last-child{border-bottom:0}
 .assets .a .k{color:var(--ink)} .assets .a .v{color:var(--ink-2);text-align:right}
 
+
+/* asset galleries */
+.aset{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+.aset .it{border:1px solid var(--rule);background:#fff;overflow:hidden}
+.aset .it .ph{background:var(--mist);display:flex;align-items:center;justify-content:center}
+.aset .it img{width:100%;height:auto;display:block}
+.aset .it .cap{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);padding:12px 14px;display:flex;justify-content:space-between;gap:10px;border-top:1px solid var(--rule)}
+.note{margin-top:24px;border:1px solid var(--rule);background:var(--mist);padding:16px 18px;font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--ink-2);line-height:1.7}
+.team{display:flex;flex-direction:column;gap:32px;margin-top:48px}
+.member{border:1px solid var(--rule-strong)}
+.member .hd{display:flex;align-items:center;gap:16px;padding:18px 22px;border-bottom:1px solid var(--rule)}
+.member .hd img{width:54px;height:54px;display:block}
+.member .hd .nm{font-family:var(--display);font-weight:900;font-size:26px;text-transform:uppercase;letter-spacing:-.02em;line-height:1}
+.member .hd .ro{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-top:4px}
+.member .row{display:grid;grid-template-columns:repeat(4,1fr)}
+.member .row .c{border-right:1px solid var(--rule);padding:18px;display:flex;flex-direction:column;gap:10px}
+.member .row .c:last-child{border-right:0}
+.member .row img{width:100%;height:auto;display:block;border:1px solid var(--rule)}
+.member .row .cap{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}
+@media(max-width:900px){.aset{grid-template-columns:1fr 1fr}.member .row{grid-template-columns:1fr 1fr}.member .row .c:nth-child(2){border-right:0}}
+
 </style></head><body>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="mark" viewBox="0 0 1254 1254"><g transform="translate(0,1254) scale(0.1,-0.1)" fill="currentColor" stroke="none"><path d="M6151 10849 c-157 -19 -329 -87 -447 -176 -50 -37 -1298 -1136 -2671
@@ -184,7 +205,7 @@ l6 578 49 5 c169 14 274 195 202 348 -23 52 -78 107 -125 128 -16 7 -117 14
 
 <nav class="nav"><div class="row">
   <div class="brand"><svg viewBox="0 0 1254 1254"><use href="#mark"/></svg><span>The Property Plug · Brand Kit</span></div>
-  <div class="links"><a href="#essence">Essence</a><a href="#logo">Logo</a><a href="#colour">Colour</a><a href="#type">Type</a><a href="#voice">Voice</a><a href="#components">Components</a><a href="#apps">Applications</a><a href="#assets">Assets</a></div>
+  <div class="links"><a href="#essence">Essence</a><a href="#logo">Logo</a><a href="#colour">Colour</a><a href="#type">Type</a><a href="#voice">Voice</a><a href="#components">Components</a><a href="#apps">Applications</a><a href="#social">Social</a><a href="#team">Team</a><a href="#assets">Assets</a></div>
 </div></nav>
 
 <header class="hero"><div class="wrap">
@@ -394,8 +415,59 @@ l6 578 49 5 c169 14 274 195 202 348 -23 52 -78 107 -125 128 -16 7 -117 14
   </div>
 </div></section>
 
+<section id="social"><div class="wrap">
+  <div class="kicker">08 · Social</div>
+  <h2 class="h-section" style="margin-top:16px">Ready to <span class="hl">post.</span></h2>
+  <p class="lead">Drop-in profile, cover, link-preview and feed assets. Exported at platform sizes, all on the system.</p>
+  <div class="aset"><div class="it"><div class="ph"><img src="assets/social/avatar-forest.png" alt="Avatar · forest" loading="lazy"></div><div class="cap"><span>Avatar · forest</span><span>1080²</span></div></div><div class="it"><div class="ph"><img src="assets/social/avatar-round.png" alt="Avatar · round" loading="lazy"></div><div class="cap"><span>Avatar · round</span><span>1080²</span></div></div><div class="it"><div class="ph"><img src="assets/social/avatar-white.png" alt="Avatar · white" loading="lazy"></div><div class="cap"><span>Avatar · white</span><span>1080²</span></div></div><div class="it"><div class="ph"><img src="assets/social/og-image.png" alt="Link preview / OG" loading="lazy"></div><div class="cap"><span>Link preview / OG</span><span>1200×630</span></div></div><div class="it"><div class="ph"><img src="assets/social/linkedin-cover.png" alt="LinkedIn cover" loading="lazy"></div><div class="cap"><span>LinkedIn cover</span><span>1584×396</span></div></div><div class="it"><div class="ph"><img src="assets/social/facebook-cover.png" alt="Facebook cover" loading="lazy"></div><div class="cap"><span>Facebook cover</span><span>1640×856</span></div></div><div class="it"><div class="ph"><img src="assets/social/instagram-post.png" alt="Instagram post" loading="lazy"></div><div class="cap"><span>Instagram post</span><span>1080²</span></div></div><div class="it"><div class="ph"><img src="assets/social/instagram-story.png" alt="Instagram story" loading="lazy"></div><div class="cap"><span>Instagram story</span><span>1080×1920</span></div></div></div>
+</div></section>
+
+<section id="team"><div class="wrap">
+  <div class="kicker">09 · Team</div>
+  <h2 class="h-section" style="margin-top:16px">The <span class="hl">people.</span></h2>
+  <p class="lead">A matching set per rep: avatar, email signature, business card front and back, and a social team card. Each email signature also ships as a pasteable .html file.</p>
+  <div class="team"><div class="member">
+    <div class="hd"><img src="assets/team/daniel/avatar.png" alt="Daniel Girmay"><div><div class="nm">Daniel Girmay</div><div class="ro">Founder · The Property Plug</div></div></div>
+    <div class="row">
+      <div class="c"><img src="assets/team/daniel/email-signature.png" alt="Daniel Girmay signature"><span class="cap">Email signature (+ .html)</span></div>
+      <div class="c"><img src="assets/team/daniel/business-card-front.png" alt="Daniel Girmay card front"><span class="cap">Business card · front</span></div>
+      <div class="c"><img src="assets/team/daniel/business-card-back.png" alt="card back"><span class="cap">Business card · back</span></div>
+      <div class="c"><img src="assets/team/daniel/team-card.png" alt="Daniel Girmay team card"><span class="cap">Social team card</span></div>
+    </div>
+  </div>
+<div class="member">
+    <div class="hd"><img src="assets/team/jesse/avatar.png" alt="Jesse"><div><div class="nm">Jesse</div><div class="ro">Building Broker · The Property Plug</div></div></div>
+    <div class="row">
+      <div class="c"><img src="assets/team/jesse/email-signature.png" alt="Jesse signature"><span class="cap">Email signature (+ .html)</span></div>
+      <div class="c"><img src="assets/team/jesse/business-card-front.png" alt="Jesse card front"><span class="cap">Business card · front</span></div>
+      <div class="c"><img src="assets/team/jesse/business-card-back.png" alt="card back"><span class="cap">Business card · back</span></div>
+      <div class="c"><img src="assets/team/jesse/team-card.png" alt="Jesse team card"><span class="cap">Social team card</span></div>
+    </div>
+  </div>
+<div class="member">
+    <div class="hd"><img src="assets/team/hamza/avatar.png" alt="Hamza"><div><div class="nm">Hamza</div><div class="ro">Building Broker · The Property Plug</div></div></div>
+    <div class="row">
+      <div class="c"><img src="assets/team/hamza/email-signature.png" alt="Hamza signature"><span class="cap">Email signature (+ .html)</span></div>
+      <div class="c"><img src="assets/team/hamza/business-card-front.png" alt="Hamza card front"><span class="cap">Business card · front</span></div>
+      <div class="c"><img src="assets/team/hamza/business-card-back.png" alt="card back"><span class="cap">Business card · back</span></div>
+      <div class="c"><img src="assets/team/hamza/team-card.png" alt="Hamza team card"><span class="cap">Social team card</span></div>
+    </div>
+  </div>
+<div class="member">
+    <div class="hd"><img src="assets/team/stefan/avatar.png" alt="Stefan"><div><div class="nm">Stefan</div><div class="ro">Building Broker · The Property Plug</div></div></div>
+    <div class="row">
+      <div class="c"><img src="assets/team/stefan/email-signature.png" alt="Stefan signature"><span class="cap">Email signature (+ .html)</span></div>
+      <div class="c"><img src="assets/team/stefan/business-card-front.png" alt="Stefan card front"><span class="cap">Business card · front</span></div>
+      <div class="c"><img src="assets/team/stefan/business-card-back.png" alt="card back"><span class="cap">Business card · back</span></div>
+      <div class="c"><img src="assets/team/stefan/team-card.png" alt="Stefan team card"><span class="cap">Social team card</span></div>
+    </div>
+  </div>
+</div>
+  <div class="note">PLACEHOLDER DETAILS // Roles default to "Building Broker" and phones to 04XX XXX XXX. Emails use firstname@thepropertyplug.com.au. Send me the real role, email and mobile for each rep and I will re-render in one pass.</div>
+</div></section>
+
 <section id="rules"><div class="wrap">
-  <div class="kicker">08 · Rules</div>
+  <div class="kicker">10 · Rules</div>
   <h2 class="h-section" style="margin-top:16px">Hold the <span class="hl">line.</span></h2>
   <div class="dd">
     <div class="rc do"><h4>Do</h4><ul><li>Default to white with ink type and hairline-bordered cards.</li><li>Forest anchors, green is the single action colour.</li><li>Frame every price as "from".</li><li>Set display in Inter Tight 900 all caps, tight tracking.</li><li>Run mono receipts and spec labels in corners.</li><li>Australian spelling for client-facing copy.</li></ul></div>
@@ -404,7 +476,7 @@ l6 578 49 5 c169 14 274 195 202 348 -23 52 -78 107 -125 128 -16 7 -117 14
 </div></section>
 
 <section id="assets"><div class="wrap">
-  <div class="kicker">09 · Assets</div>
+  <div class="kicker">11 · Assets</div>
   <h2 class="h-section" style="margin-top:16px">Grab the <span class="hl">files.</span></h2>
   <p class="lead">Everything lives in the source kit. SVG for anything scalable, PNG for quick drops, tokens for builds.</p>
   <div class="assets">
@@ -414,7 +486,7 @@ l6 578 49 5 c169 14 274 195 202 348 -23 52 -78 107 -125 128 -16 7 -117 14
     <div class="a"><span class="k">Favicon + Apple touch icon</span><span class="v">logo/favicon-32.png · apple-touch-icon.png</span></div>
     <div class="a"><span class="k">CSS variables + components</span><span class="v">tokens.css</span></div>
     <div class="a"><span class="k">Machine-readable tokens</span><span class="v">tokens.json</span></div>
-    <div class="a"><span class="k">This guidelines page</span><span class="v">brand.html</span></div>
+    <div class="a"><span class="k">Social pack (avatars, covers, OG, post, story)</span><span class="v">assets/social/</span></div><div class="a"><span class="k">Team packs (avatar, signature, cards, team card)</span><span class="v">assets/team/{daniel,jesse,hamza,stefan}/</span></div><div class="a"><span class="k">Pasteable HTML email signatures</span><span class="v">assets/team/*/email-signature.html</span></div><div class="a"><span class="k">This guidelines page</span><span class="v">brand.html</span></div>
   </div>
 </div></section>
 
@@ -438,19 +510,12 @@ l6 578 49 5 c169 14 274 195 202 348 -23 52 -78 107 -125 128 -16 7 -117 14
   </div>
 </div>
 <script>
-(function(){
-  var H="1d91ff281608d316918773feb7a95427ad2aaab76f788f2b8bd661c16d93430a", g=document.getElementById("tppgate");
-  function unlock(){ g.parentNode.removeChild(g); document.body.style.overflow=""; }
-  if(localStorage.getItem("tpp_brand_ok")==="1"){ unlock(); return; }
-  document.body.style.overflow="hidden";
-  async function sha(s){ var b=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(s)); return Array.from(new Uint8Array(b)).map(x=>x.toString(16).padStart(2,"0")).join(""); }
-  document.getElementById("tppform").addEventListener("submit",async function(e){
-    e.preventDefault();
-    var v=document.getElementById("tpppw").value;
-    if(await sha(v)===H){ localStorage.setItem("tpp_brand_ok","1"); unlock(); }
-    else{ document.getElementById("tpperr").textContent="Incorrect code"; }
-  });
-})();
+(function(){var H="1d91ff281608d316918773feb7a95427ad2aaab76f788f2b8bd661c16d93430a",g=document.getElementById("tppgate");
+function unlock(){g.parentNode.removeChild(g);document.body.style.overflow="";}
+if(localStorage.getItem("tpp_brand_ok")==="1"){unlock();return;}
+document.body.style.overflow="hidden";
+async function sha(s){var b=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(s));return Array.from(new Uint8Array(b)).map(x=>x.toString(16).padStart(2,"0")).join("");}
+document.getElementById("tppform").addEventListener("submit",async function(e){e.preventDefault();var v=document.getElementById("tpppw").value;if(await sha(v)===H){localStorage.setItem("tpp_brand_ok","1");unlock();}else{document.getElementById("tpperr").textContent="Incorrect code";}});})();
 </script>
 
 </body></html>
