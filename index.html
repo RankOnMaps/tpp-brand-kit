@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en-AU"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>The Property Plug · Brand Kit</title><meta name="robots" content="noindex, nofollow"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700;800;900&family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@1,9..144,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/svg+xml" href="logo/app-icon.svg"/>
+<style>
+:root{
+  --page:#FFFFFF; --ink:#16201C; --ink-2:#5A6661;
+  --forest:#1F4D3C; --forest-deep:#143728;
+  --signal:#1FC76A; --signal-deep:#17B65D; --mist:#EDF2EE;
+  --rule:rgba(22,32,28,0.12); --rule-strong:rgba(22,32,28,0.26);
+  --display:"Inter Tight",-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --body:"Inter",-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --serif:"Fraunces",Georgia,serif; --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+*{box-sizing:border-box} html,body{margin:0;padding:0}
+body{font-family:var(--body);background:var(--page);color:var(--ink);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;font-family:var(--display)}
+.wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+section{padding:96px 0;border-top:1px solid var(--rule)}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--forest)}
+.h-section{font-family:var(--display);font-weight:900;font-size:clamp(48px,8vw,112px);letter-spacing:-.045em;line-height:.9;text-transform:uppercase}
+.hl{color:var(--signal)}
+p.lead{font-size:18px;max-width:64ch;color:var(--ink-2);line-height:1.55;margin:24px 0 0}
+svg.um{width:100%;height:100%;display:block} .mk{display:block}
+
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--rule)}
+.nav .row{display:flex;align-items:center;gap:24px;padding:14px 32px;max-width:1280px;margin:0 auto}
+.nav .brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:900;font-size:14px;letter-spacing:.04em;text-transform:uppercase}
+.nav .brand svg{width:26px;height:26px;color:var(--ink)}
+.nav .links{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
+.nav .links a{font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-2);padding:8px 12px}
+.nav .links a:hover{background:var(--mist);color:var(--ink)}
+
+.hero{padding:88px 0 104px;border-bottom:1px solid var(--rule)}
+.hero .grid{display:grid;grid-template-columns:1.5fr 1fr;gap:64px;align-items:end}
+.hero h1{font-family:var(--display);font-weight:900;font-size:clamp(72px,13vw,196px);line-height:.84;letter-spacing:-.05em;text-transform:uppercase}
+.hero .meta{display:flex;flex-direction:column}
+.hero .meta .r{display:flex;gap:16px;align-items:baseline;border-top:1px solid var(--rule);padding:12px 0}
+.hero .meta .k{font-family:var(--mono);font-size:10px;letter-spacing:.24em;color:var(--ink-2);text-transform:uppercase;min-width:96px}
+.hero .meta .v{font-size:14px}
+.hero .receipt{margin-top:56px;display:flex;justify-content:space-between;align-items:center;padding-top:24px;border-top:1px solid var(--rule-strong);font-family:var(--mono);font-size:11px;letter-spacing:.26em;color:var(--ink);text-transform:uppercase;flex-wrap:wrap;gap:10px}
+@media(max-width:900px){.hero .grid{grid-template-columns:1fr}}
+
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);margin-top:56px;border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule-strong)}
+.pillar{padding:36px 32px;border-right:1px solid var(--rule)} .pillar:last-child{border-right:0}
+.pillar .n{font-family:var(--mono);font-size:11px;letter-spacing:.32em;color:var(--forest);text-transform:uppercase;margin-bottom:24px}
+.pillar h3{font-family:var(--display);font-weight:900;font-size:28px;letter-spacing:-.025em;line-height:1;text-transform:uppercase;margin-bottom:14px}
+.pillar p{color:var(--ink-2);font-size:14px;margin:0;line-height:1.6}
+@media(max-width:800px){.pillars{grid-template-columns:1fr}.pillar{border-right:0;border-bottom:1px solid var(--rule)}.pillar:last-child{border-bottom:0}}
+
+.lg{display:grid;grid-template-columns:repeat(4,1fr);margin-top:48px;border:1px solid var(--rule-strong)}
+.lc{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;position:relative;padding:17%;border-right:1px solid var(--rule)} .lc:last-child{border-right:0}
+.lc.w{background:#fff} .lc.m{background:var(--mist)} .lc.f{background:var(--forest)} .lc.i{background:var(--ink)}
+.lc .l{position:absolute;bottom:12px;left:14px;font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-2)}
+.lc.f .l,.lc.i .l{color:rgba(255,255,255,.55)}
+.lockup{display:flex;align-items:center;gap:20px;margin-top:24px;padding:36px;border:1px solid var(--rule-strong)}
+.lockup .the{font-family:var(--mono);font-size:13px;letter-spacing:.34em;color:var(--forest);text-transform:uppercase}
+.lockup .nm{font-family:var(--display);font-weight:900;font-size:40px;letter-spacing:-.03em;line-height:.9;text-transform:uppercase}
+
+.sw{display:grid;grid-template-columns:repeat(6,1fr);margin-top:48px;border:1px solid var(--rule-strong)}
+.s{border-right:1px solid var(--rule)} .s:last-child{border-right:0}
+.s .chip{aspect-ratio:1/1.1;display:flex;flex-direction:column;justify-content:flex-end;padding:14px 16px}
+.s .chip .nm{font-family:var(--display);font-weight:900;font-size:14px;text-transform:uppercase} .s .chip .hx{font-family:var(--mono);font-size:11px;margin-top:3px;opacity:.85}
+.s .meta{padding:10px 16px;font-family:var(--mono);font-size:10px;color:var(--ink-2);border-top:1px solid var(--rule);text-transform:uppercase;letter-spacing:.04em}
+@media(max-width:1000px){.sw{grid-template-columns:repeat(3,1fr)}}@media(max-width:600px){.sw{grid-template-columns:repeat(2,1fr)}}
+.ratio{display:flex;height:56px;margin-top:32px;border:1px solid var(--rule-strong);font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase}
+.ratio>div{display:flex;align-items:center;padding:0 14px}
+
+.tb{background:#fff;border:1px solid var(--rule);padding:36px;margin-top:16px}
+.tb .m{display:flex;gap:24px;flex-wrap:wrap;font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-2);margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--rule)}
+.tb .disp{font-family:var(--display);font-weight:900;font-size:clamp(48px,8vw,116px);line-height:.9;letter-spacing:-.045em;text-transform:uppercase}
+.tb .body{font-family:var(--body);font-size:16px;line-height:1.6;color:var(--ink-2);max-width:62ch;margin-top:4px}
+.tb .mn{font-family:var(--mono);font-size:14px;line-height:1.85;color:var(--ink);margin-top:24px;padding-top:16px;border-top:1px solid var(--rule);letter-spacing:.04em} .tb .mn .d{color:var(--ink-2)}
+.tb.ed{background:var(--mist)} .tb.ed .q{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(28px,5vw,52px);line-height:1.18;letter-spacing:-.015em;max-width:30ch}
+.tb.ed .at{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-2);margin-top:32px;padding-top:16px;border-top:1px solid var(--rule);display:flex;justify-content:space-between}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.pc{background:#fff;border:1px solid var(--rule);overflow:hidden;display:flex;flex-direction:column}
+.pc .img{aspect-ratio:4/3;background:var(--mist);position:relative;display:flex;align-items:center;justify-content:center;padding:22%;border-bottom:1px solid var(--rule)} .pc .img.dk{background:var(--forest)}
+.pc .bb{position:absolute;top:12px;left:12px;background:#fff;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 9px;border:1px solid var(--rule)}
+.pc .t2{position:absolute;top:12px;right:12px;background:var(--signal);color:var(--ink);font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 9px}
+.pc .bd{padding:18px;display:flex;flex-direction:column;flex:1}
+.pc .nm{font-family:var(--display);font-weight:900;font-size:24px;letter-spacing:-.02em;text-transform:uppercase;line-height:1}
+.pc .cf{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);margin:8px 0 18px}
+.pc .ft{margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between}
+.pc .fr{font-family:var(--mono);font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-2)}
+.pc .pr{font-family:var(--display);font-weight:900;font-size:26px;letter-spacing:-.02em;color:var(--forest)}
+.cta{display:inline-block;font-family:var(--display);font-weight:900;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:12px 20px;background:var(--signal);color:var(--ink)} .cta:hover{background:var(--signal-deep)}
+.cta.alt{background:var(--forest);color:#fff} .cta.alt:hover{background:var(--forest-deep)}
+.btn{display:flex;gap:14px;align-items:center;margin-top:32px;flex-wrap:wrap}
+@media(max-width:900px){.cards{grid-template-columns:1fr}}
+
+.dd{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}
+.rc{background:#fff;border:1px solid var(--rule);padding:28px}
+.rc h4{font-family:var(--display);font-weight:900;font-size:16px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:16px}
+.rc.do h4{color:var(--forest)} .rc.no h4{color:#A24A33}
+.rc ul{padding-left:20px;margin:0;color:var(--ink-2);font-size:14px} .rc li{margin:8px 0;line-height:1.55}
+@media(max-width:800px){.dd{grid-template-columns:1fr}}
+
+footer{padding:80px 0 64px;background:var(--ink);color:var(--page)}
+footer .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap}
+footer .big{font-family:var(--display);font-weight:900;font-size:clamp(56px,11vw,164px);line-height:.86;letter-spacing:-.05em;text-transform:uppercase}
+footer .meta{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.55);line-height:2}
+
+/* clear-space + misuse */
+.lg2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:24px}
+.box{border:1px solid var(--rule);padding:28px;background:#fff}
+.box h4{font-family:var(--display);font-weight:900;font-size:14px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:14px}
+.misuse{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--rule-strong);margin-top:24px}
+.mi{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;position:relative;border-right:1px solid var(--rule);padding:22%}
+.mi:last-child{border-right:0}
+.mi .x{position:absolute;bottom:10px;left:12px;font-family:var(--mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#A24A33}
+/* voice */
+.voice{margin-top:48px;border-top:1px solid var(--rule-strong)}
+.vline{font-family:var(--display);font-weight:900;font-size:clamp(28px,4vw,52px);letter-spacing:-.035em;text-transform:uppercase;line-height:1.04;padding:26px 0;border-bottom:1px solid var(--rule)}
+.vline .hl{color:var(--signal)}
+.tone{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.tone span{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--rule-strong);padding:9px 14px}
+.say{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:28px}
+.say .col h4{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:12px}
+.say .col.ok h4{color:var(--forest)} .say .col.no h4{color:#A24A33}
+.say p{font-size:15px;color:var(--ink-2);margin:8px 0;padding-left:18px;position:relative}
+.say .ok p::before{content:"+";position:absolute;left:0;color:var(--forest);font-weight:700}
+.say .no p::before{content:"\2013";position:absolute;left:0;color:#A24A33;font-weight:700}
+/* applications */
+.apps{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:48px}
+.app{border:1px solid var(--rule);background:#fff;overflow:hidden}
+.app .cap{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-2);padding:12px 16px;border-top:1px solid var(--rule)}
+.bcard{aspect-ratio:16/9;background:var(--ink);color:var(--page);padding:28px;display:flex;flex-direction:column;justify-content:space-between}
+.bcard .nm{font-family:var(--display);font-weight:900;font-size:24px;text-transform:uppercase;letter-spacing:-.02em}
+.bcard .ro{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--signal);margin-top:4px}
+.bcard .dt{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:rgba(244,242,236,.7);line-height:1.8}
+.sig{padding:26px;display:flex;gap:18px;align-items:center;aspect-ratio:16/9}
+.sig .nm{font-family:var(--display);font-weight:900;font-size:20px;text-transform:uppercase;letter-spacing:-.02em}
+.sig .ro{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin:3px 0 8px}
+.sig .dt{font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--ink-2);line-height:1.7}
+.sig .bar{width:3px;align-self:stretch;background:var(--signal)}
+.av{aspect-ratio:16/9;display:flex;gap:24px;align-items:center;justify-content:center;background:var(--mist)}
+.av .a{width:96px;height:96px;border-radius:22px;overflow:hidden}
+.av .a.round{border-radius:999px}
+.sign{aspect-ratio:16/9;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;gap:10px}
+.sign .t{font-family:var(--display);font-weight:900;font-size:26px;text-transform:uppercase;letter-spacing:-.02em;line-height:1}
+.sign .s{font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2)}
+@media(max-width:820px){.apps{grid-template-columns:1fr}.misuse{grid-template-columns:1fr 1fr}.say{grid-template-columns:1fr}.lg2{grid-template-columns:1fr}}
+/* assets */
+.assets{border:1px solid var(--rule);margin-top:48px}
+.assets .a{display:flex;justify-content:space-between;gap:16px;padding:14px 18px;border-bottom:1px solid var(--rule);font-family:var(--mono);font-size:12px;letter-spacing:.03em}
+.assets .a:last-child{border-bottom:0}
+.assets .a .k{color:var(--ink)} .assets .a .v{color:var(--ink-2);text-align:right}
+
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="mark" viewBox="0 0 1254 1254"><g transform="translate(0,1254) scale(0.1,-0.1)" fill="currentColor" stroke="none"><path d="M6151 10849 c-157 -19 -329 -87 -447 -176 -50 -37 -1298 -1136 -2671
+-2350 -387 -342 -502 -454 -572 -557 -51 -74 -109 -204 -138 -311 l-28 -100
+-3 -2135 c-2 -1585 0 -2154 8 -2210 63 -404 376 -742 786 -847 64 -17 158 -18
+1314 -18 l1245 0 89 23 c346 88 605 326 715 657 43 130 51 213 51 519 l0 273
+128 6 c269 13 518 113 716 290 123 109 256 312 315 479 65 186 64 179 70 812
+l6 578 49 5 c169 14 274 195 202 348 -23 52 -78 107 -125 128 -16 7 -117 14
+-271 17 l-245 5 -5 615 c-5 612 -5 615 -27 657 -77 142 -278 172 -384 56 -68
+-74 -63 -22 -69 -708 l-5 -620 -597 -3 -597 -2 -3 612 c-3 607 -3 613 -25 653
+-48 90 -127 139 -221 138 -108 -1 -204 -72 -232 -171 -6 -23 -10 -254 -10
+-634 l0 -598 -218 0 c-248 0 -286 -7 -347 -67 -52 -51 -75 -105 -75 -181 0
+-128 80 -221 212 -246 l37 -7 4 -567 c3 -535 5 -572 25 -657 54 -230 148 -412
+297 -573 207 -224 524 -362 833 -362 l72 0 0 -262 c0 -287 -8 -343 -58 -446
+-37 -77 -119 -162 -193 -202 -129 -68 -43 -64 -1326 -67 -1282 -4 -1242 -6
+-1373 59 -138 67 -248 219 -270 373 -6 45 -10 800 -9 2105 0 2252 -4 2130 64
+2259 47 88 72 115 325 336 112 99 245 216 295 261 49 44 185 163 300 264 116
+102 531 468 924 815 1211 1068 1322 1164 1377 1190 128 61 268 59 392 -4 47
+-24 144 -108 1392 -1196 491 -429 1319 -1150 1516 -1320 253 -219 292 -258
+333 -334 66 -124 61 39 59 -2298 l-3 -2118 -22 -58 c-49 -129 -155 -239 -284
+-295 l-64 -27 -1255 -5 c-1246 -5 -1255 -5 -1300 -26 -95 -44 -150 -127 -150
+-229 0 -76 24 -128 83 -182 85 -78 -2 -74 1398 -71 l1244 3 95 26 c52 15 126
+41 164 58 236 107 441 325 526 560 69 191 64 -4 68 2311 2 1440 0 2128 -8
+2201 -13 133 -40 229 -95 348 -91 190 -129 230 -700 727 -220 191 -539 470
+-710 619 -391 341 -895 781 -1089 950 -82 72 -296 258 -475 414 -379 329 -365
+318 -467 376 -164 94 -377 137 -563 114z m191 -5069 l899 0 -3 -557 -3 -558
+-28 -80 c-85 -241 -270 -407 -506 -451 -67 -13 -152 -15 -484 -12 l-402 4 -80
+27 c-172 58 -308 174 -384 328 -76 156 -75 143 -78 709 -2 278 0 524 3 547 5
+40 7 42 42 46 20 3 57 3 81 1 24 -2 448 -4 943 -4z"/></g></symbol></svg>
+
+<nav class="nav"><div class="row">
+  <div class="brand"><svg viewBox="0 0 1254 1254"><use href="#mark"/></svg><span>The Property Plug · Brand Kit</span></div>
+  <div class="links"><a href="#essence">Essence</a><a href="#logo">Logo</a><a href="#colour">Colour</a><a href="#type">Type</a><a href="#voice">Voice</a><a href="#components">Components</a><a href="#apps">Applications</a><a href="#assets">Assets</a></div>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="grid">
+    <div><div class="kicker">Brand Kit · v2.0 · 2026</div>
+      <h1 style="margin-top:18px">The<br/>Property<br/><span class="hl">Plug.</span></h1></div>
+    <div class="meta">
+      <div class="r"><span class="k">Business</span><span class="v">WA home-building brokerage</span></div>
+      <div class="r"><span class="k">Market</span><span class="v">Perth metro, Western Australia</span></div>
+      <div class="r"><span class="k">Founder</span><span class="v">Daniel Girmay</span></div>
+      <div class="r"><span class="k">System</span><span class="v">White, bold black type, one green</span></div>
+    </div>
+  </div>
+  <div class="receipt"><span>Your panel of WA's best builders, behind one private door.</span><span>THEPROPERTYPLUG.COM.AU</span></div>
+</div></header>
+
+<section id="essence"><div class="wrap">
+  <div class="kicker">01 · Essence</div>
+  <h2 class="h-section" style="margin-top:16px">Curation. Transparency. <span class="hl">Access.</span></h2>
+  <p class="lead">Daniel hand-picks the panel and presents it boldly. Real base prices, honest inclusions, a private link. Confident and direct, with one green moment to keep it alive.</p>
+  <div class="pillars">
+    <div class="pillar"><div class="n">P.01</div><h3>Curation</h3><p>Fewer, better builders, presented with room to breathe. Hand-picked, so the experience feels selective, never a catalogue.</p></div>
+    <div class="pillar"><div class="n">P.02</div><h3>Transparency</h3><p>Real base prices, clear inclusions, honest upgrade paths. Internal margins stay invisible. Trust is the product.</p></div>
+    <div class="pillar"><div class="n">P.03</div><h3>Access</h3><p>A private link to a curated panel. The confidence of a broker who already did the homework for you.</p></div>
+  </div>
+</div></section>
+
+<section id="logo"><div class="wrap">
+  <div class="kicker">02 · Logo</div>
+  <h2 class="h-section" style="margin-top:16px">A house with a <span class="hl">plug.</span></h2>
+  <p class="lead">Line-art house, an electrical plug inside, the cord forming the bottom-right edge. Home plus connection. One colour at a time.</p>
+  <div class="lg">
+    <div class="lc w"><div class="mk" style="width:62%;color:var(--ink)"><svg class="um" viewBox="0 0 1254 1254"><use href="#mark"/></svg></div><span class="l">Ink · on white</span></div>
+    <div class="lc m"><div class="mk" style="width:62%;color:var(--forest)"><svg class="um" viewBox="0 0 1254 1254"><use href="#mark"/></svg></div><span class="l">Forest · on mist</span></div>
+    <div class="lc f"><div class="mk" style="width:62%;color:#fff"><svg class="um" viewBox="0 0 1254 1254"><use href="#mark"/></svg></div><span class="l">White · on forest</span></div>
+    <div class="lc i"><div class="mk" style="width:62%;color:var(--signal)"><svg class="um" viewBox="0 0 1254 1254"><use href="#mark"/></svg></div><span class="l">Green · on ink</span></div>
+  </div>
+  <div class="lockup">
+    <div class="mk" style="width:84px;height:84px;color:var(--ink)"><svg class="um" viewBox="0 0 1254 1254"><use href="#mark"/></svg></div>
+    <div><div class="the">The</div><div class="nm">Property<br/>Plug</div></div>
+  </div>
+  <div class="lg2">
+    <div class="box"><h4>Clear space</h4><div style="display:flex;align-items:center;justify-content:center;padding:18px;background:var(--mist)"><div style="border:1px dashed var(--rule-strong);padding:14%;"><div style="width:80px;height:80px;color:var(--ink)"><svg class="um" viewBox="0 0 1254 1254"><use href="#mark"/></svg></div></div></div><p style="font-size:14px;color:var(--ink-2);margin-top:14px">Keep clear space of at least the roof height on every side. Minimum size 24px on screen.</p></div>
+    <div class="box"><h4>Misuse</h4><div class="misuse">
+      <div class="mi" style="background:#fff"><div style="width:70%;color:var(--ink);transform:skewX(-12deg)"><svg class="um" viewBox="0 0 1254 1254"><use href="#mark"/></svg></div><span class="x">No skew</span></div>
+      <div class="mi" style="background:#fff"><div style="width:70%;color:#C81E1E"><svg class="um" viewBox="0 0 1254 1254"><use href="#mark"/></svg></div><span class="x">No off-palette</span></div>
+      <div class="mi" style="background:linear-gradient(135deg,#888,#ccc)"><div style="width:70%;color:#fff"><svg class="um" viewBox="0 0 1254 1254"><use href="#mark"/></svg></div><span class="x">No busy bg</span></div>
+      <div class="mi" style="background:#fff"><div style="width:70%;height:46%;overflow:hidden;color:var(--ink)"><svg class="um" viewBox="0 0 1254 1254" preserveAspectRatio="none"><use href="#mark"/></svg></div><span class="x">No stretch</span></div>
+    </div></div>
+  </div>
+
+</div></section>
+
+<section id="colour"><div class="wrap">
+  <div class="kicker">03 · Colour</div>
+  <h2 class="h-section" style="margin-top:16px">White, black, <span class="hl">one green.</span></h2>
+  <p class="lead">White does the work, ink carries the type, forest grounds it and the green is the signal, used on the action and the one emphasis word. Never a wall of it.</p>
+  <div class="sw">
+    <div class="s"><div class="chip" style="background:#FFFFFF;color:#16201C;box-shadow:inset 0 0 0 1px var(--rule)"><div class="nm">White</div><div class="hx">#FFFFFF</div></div><div class="meta">Page · 60%</div></div>
+    <div class="s"><div class="chip" style="background:#EDF2EE;color:#16201C"><div class="nm">Mist</div><div class="hx">#EDF2EE</div></div><div class="meta">Quiet fills</div></div>
+    <div class="s"><div class="chip" style="background:#1F4D3C;color:#fff"><div class="nm">Forest</div><div class="hx">#1F4D3C</div></div><div class="meta">Anchor · 20%</div></div>
+    <div class="s"><div class="chip" style="background:#1FC76A;color:#16201C"><div class="nm">Signal</div><div class="hx">#1FC76A</div></div><div class="meta">Action · 10%</div></div>
+    <div class="s"><div class="chip" style="background:#143728;color:#fff"><div class="nm">Forest Deep</div><div class="hx">#143728</div></div><div class="meta">Hover · darks</div></div>
+    <div class="s"><div class="chip" style="background:#16201C;color:#fff"><div class="nm">Ink</div><div class="hx">#16201C</div></div><div class="meta">Type · 10%</div></div>
+  </div>
+  <div class="ratio">
+    <div style="flex:60;background:#FFFFFF;color:#5A6661;box-shadow:inset 0 0 0 1px var(--rule)">White · 60</div>
+    <div style="flex:20;background:#1F4D3C;color:#fff">Forest · 20</div>
+    <div style="flex:10;background:#1FC76A;color:#16201C">Signal · 10</div>
+    <div style="flex:10;background:#16201C;color:#fff">Ink · 10</div>
+  </div>
+</div></section>
+
+<section id="type"><div class="wrap">
+  <div class="kicker">04 · Type</div>
+  <h2 class="h-section" style="margin-top:16px">Bold sets the <span class="hl">tone.</span></h2>
+  <p class="lead">Inter Tight 900 all caps for display, Inter for body, JetBrains Mono for receipts. One rare Fraunces italic whisper for a pulled quote.</p>
+  <div class="tb">
+    <div class="m"><span>Inter Tight · 900</span><span>All caps</span><span>Tracking -0.045em</span><span>Display · names · prices</span></div>
+    <div class="disp">Built in <span class="hl">Perth.</span><br/>Priced from day one.</div>
+    <div class="body">Inter 400-500, sentence case for everything you actually read. Four bedrooms, two bathrooms, double garage on a 12.5 metre block. Site works included, fixed-price guarantee, handed over in roughly twelve months.</div>
+    <div class="mn"><span class="d">SPEC //</span> SINGLE STOREY · 4 BED · 2 BATH · 2 CAR · 12.5M BLOCK<br/><span class="d">FROM //</span> $389,900 · PERTH METRO · ARMOUR HOMES</div>
+  </div>
+  <div class="tb ed">
+    <div class="m"><span>Fraunces · italic 400</span><span>The whisper · under 2%</span><span>Pulled quotes only</span></div>
+    <div class="q">"A broker who already did the homework for you."</div>
+    <div class="at"><span>Daniel Girmay · The Property Plug</span><span>USE SPARINGLY</span></div>
+  </div>
+</div></section>
+
+<section id="voice"><div class="wrap">
+  <div class="kicker">05 · Voice</div>
+  <h2 class="h-section" style="margin-top:16px">Say it <span class="hl">straight.</span></h2>
+  <p class="lead">A broker who already did the homework for you. Direct, confident, honest. We talk like a sharp mate in the trade, not a salesperson and not a corporate brochure.</p>
+  <div class="tone"><span>Direct</span><span>Confident</span><span>Honest</span><span>Australian</span><span>No fluff</span></div>
+  <div class="voice">
+    <div class="vline">Your panel of WA's best builders, <span class="hl">behind one private door.</span></div>
+    <div class="vline">Real prices. Honest inclusions. <span class="hl">No guesswork.</span></div>
+    <div class="vline">We hold the relationships, <span class="hl">you make the call.</span></div>
+  </div>
+  <div class="say">
+    <div class="col ok"><h4>We say</h4><p>From $389,900, fixed price, handed over in about twelve months.</p><p>Here is what is included, and here is what is not.</p><p>Built by Armour, brokered by us.</p></div>
+    <div class="col no"><h4>We don't say</h4><p>Luxury living, redefined.</p><p>Prices starting from low, low numbers!</p><p>Your dream home journey begins today.</p></div>
+  </div>
+</div></section>
+
+<section id="components"><div class="wrap">
+  <div class="kicker">06 · Components</div>
+  <h2 class="h-section" style="margin-top:16px">The design <span class="hl">card.</span></h2>
+  <p class="lead">The signature surface. Builder badge in mono, green type-badge, bold all-caps name, "from" price in forest.</p>
+  <div class="cards">
+    <div class="pc"><div class="img"><span class="bb">Step 1 Homes</span><span class="t2">Single Storey</span><div class="mk" style="width:48%;color:var(--forest);opacity:.3"><svg class="um" viewBox="0 0 1254 1254"><use href="#mark"/></svg></div></div><div class="bd"><div class="nm">The Anchor</div><div class="cf">4 Bed · 2 Bath · 2 Car</div><div class="ft"><div><div class="fr">From</div><div class="pr">$389,900</div></div><a class="cta" href="#">View</a></div></div></div>
+    <div class="pc"><div class="img dk"><span class="bb">Armour Homes</span><span class="t2">Granny Flat</span><div class="mk" style="width:48%;color:#fff;opacity:.6"><svg class="um" viewBox="0 0 1254 1254"><use href="#mark"/></svg></div></div><div class="bd"><div class="nm">The Retreat</div><div class="cf">2 Bed · 1 Bath · 1 Car</div><div class="ft"><div><div class="fr">From</div><div class="pr">$164,500</div></div><a class="cta" href="#">View</a></div></div></div>
+    <div class="pc"><div class="img"><span class="bb">Armour Homes</span><span class="t2">Investor</span><div class="mk" style="width:48%;color:var(--forest);opacity:.3"><svg class="um" viewBox="0 0 1254 1254"><use href="#mark"/></svg></div></div><div class="bd"><div class="nm">The Dual Key</div><div class="cf">4 Bed · 2 Bath · 2 Car</div><div class="ft"><div><div class="fr">From</div><div class="pr">$512,000</div></div><a class="cta" href="#">View</a></div></div></div>
+  </div>
+  <div class="btn"><a class="cta" href="#">Book a call with Daniel</a><a class="cta alt" href="#">Browse the panel</a><span class="kicker">Green = the action · forest = everything structural</span></div>
+</div></section>
+
+<section id="apps"><div class="wrap">
+  <div class="kicker">07 · Applications</div>
+  <h2 class="h-section" style="margin-top:16px">Out in the <span class="hl">world.</span></h2>
+  <p class="lead">The system in use. Bold black type, white space, the mark, one green moment, mono details.</p>
+  <div class="apps">
+    <div class="app">
+      <div class="bcard">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start"><div style="width:46px;height:46px;color:var(--page)"><svg class="um" viewBox="0 0 1254 1254"><use href="#mark"/></svg></div><div style="font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--signal)">THE PROPERTY PLUG</div></div>
+        <div><div class="nm">Daniel Girmay</div><div class="ro">Founder</div></div>
+        <div class="dt">dg@thepropertyplug.com.au<br/>thepropertyplug.com.au · Perth WA</div>
+      </div>
+      <div class="cap">Business card · front</div>
+    </div>
+    <div class="app">
+      <div class="sig">
+        <div style="width:64px;height:64px;color:var(--ink)"><svg class="um" viewBox="0 0 1254 1254"><use href="#mark"/></svg></div>
+        <div class="bar"></div>
+        <div><div class="nm">Daniel Girmay</div><div class="ro">Founder · The Property Plug</div><div class="dt">dg@thepropertyplug.com.au<br/>thepropertyplug.com.au</div></div>
+      </div>
+      <div class="cap">Email signature</div>
+    </div>
+    <div class="app">
+      <div class="av">
+        <div class="a"><svg width="96" height="96" viewBox="0 0 240 240" fill="none"><defs><linearGradient id="av1" x1="0" y1="0" x2="0" y2="240" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#235643"/><stop offset="1" stop-color="#143728"/></linearGradient></defs><rect width="240" height="240" rx="54" fill="url(#av1)"/><rect x="3" y="3" width="234" height="234" rx="52" fill="none" stroke="#1FC76A" stroke-width="3" opacity=".6"/><g transform="translate(40,40) scale(0.128)"><g transform="translate(0,1254) scale(0.1,-0.1)" fill="#F4F2EC" stroke="none"><path d="M6151 10849 c-157 -19 -329 -87 -447 -176 -50 -37 -1298 -1136 -2671
+-2350 -387 -342 -502 -454 -572 -557 -51 -74 -109 -204 -138 -311 l-28 -100
+-3 -2135 c-2 -1585 0 -2154 8 -2210 63 -404 376 -742 786 -847 64 -17 158 -18
+1314 -18 l1245 0 89 23 c346 88 605 326 715 657 43 130 51 213 51 519 l0 273
+128 6 c269 13 518 113 716 290 123 109 256 312 315 479 65 186 64 179 70 812
+l6 578 49 5 c169 14 274 195 202 348 -23 52 -78 107 -125 128 -16 7 -117 14
+-271 17 l-245 5 -5 615 c-5 612 -5 615 -27 657 -77 142 -278 172 -384 56 -68
+-74 -63 -22 -69 -708 l-5 -620 -597 -3 -597 -2 -3 612 c-3 607 -3 613 -25 653
+-48 90 -127 139 -221 138 -108 -1 -204 -72 -232 -171 -6 -23 -10 -254 -10
+-634 l0 -598 -218 0 c-248 0 -286 -7 -347 -67 -52 -51 -75 -105 -75 -181 0
+-128 80 -221 212 -246 l37 -7 4 -567 c3 -535 5 -572 25 -657 54 -230 148 -412
+297 -573 207 -224 524 -362 833 -362 l72 0 0 -262 c0 -287 -8 -343 -58 -446
+-37 -77 -119 -162 -193 -202 -129 -68 -43 -64 -1326 -67 -1282 -4 -1242 -6
+-1373 59 -138 67 -248 219 -270 373 -6 45 -10 800 -9 2105 0 2252 -4 2130 64
+2259 47 88 72 115 325 336 112 99 245 216 295 261 49 44 185 163 300 264 116
+102 531 468 924 815 1211 1068 1322 1164 1377 1190 128 61 268 59 392 -4 47
+-24 144 -108 1392 -1196 491 -429 1319 -1150 1516 -1320 253 -219 292 -258
+333 -334 66 -124 61 39 59 -2298 l-3 -2118 -22 -58 c-49 -129 -155 -239 -284
+-295 l-64 -27 -1255 -5 c-1246 -5 -1255 -5 -1300 -26 -95 -44 -150 -127 -150
+-229 0 -76 24 -128 83 -182 85 -78 -2 -74 1398 -71 l1244 3 95 26 c52 15 126
+41 164 58 236 107 441 325 526 560 69 191 64 -4 68 2311 2 1440 0 2128 -8
+2201 -13 133 -40 229 -95 348 -91 190 -129 230 -700 727 -220 191 -539 470
+-710 619 -391 341 -895 781 -1089 950 -82 72 -296 258 -475 414 -379 329 -365
+318 -467 376 -164 94 -377 137 -563 114z m191 -5069 l899 0 -3 -557 -3 -558
+-28 -80 c-85 -241 -270 -407 -506 -451 -67 -13 -152 -15 -484 -12 l-402 4 -80
+27 c-172 58 -308 174 -384 328 -76 156 -75 143 -78 709 -2 278 0 524 3 547 5
+40 7 42 42 46 20 3 57 3 81 1 24 -2 448 -4 943 -4z"/></g></g></svg></div>
+        <div class="a round"><svg width="96" height="96" viewBox="0 0 240 240" fill="none"><rect width="240" height="240" fill="#16201C"/><g transform="translate(40,40) scale(0.128)"><g transform="translate(0,1254) scale(0.1,-0.1)" fill="#1FC76A" stroke="none"><path d="M6151 10849 c-157 -19 -329 -87 -447 -176 -50 -37 -1298 -1136 -2671
+-2350 -387 -342 -502 -454 -572 -557 -51 -74 -109 -204 -138 -311 l-28 -100
+-3 -2135 c-2 -1585 0 -2154 8 -2210 63 -404 376 -742 786 -847 64 -17 158 -18
+1314 -18 l1245 0 89 23 c346 88 605 326 715 657 43 130 51 213 51 519 l0 273
+128 6 c269 13 518 113 716 290 123 109 256 312 315 479 65 186 64 179 70 812
+l6 578 49 5 c169 14 274 195 202 348 -23 52 -78 107 -125 128 -16 7 -117 14
+-271 17 l-245 5 -5 615 c-5 612 -5 615 -27 657 -77 142 -278 172 -384 56 -68
+-74 -63 -22 -69 -708 l-5 -620 -597 -3 -597 -2 -3 612 c-3 607 -3 613 -25 653
+-48 90 -127 139 -221 138 -108 -1 -204 -72 -232 -171 -6 -23 -10 -254 -10
+-634 l0 -598 -218 0 c-248 0 -286 -7 -347 -67 -52 -51 -75 -105 -75 -181 0
+-128 80 -221 212 -246 l37 -7 4 -567 c3 -535 5 -572 25 -657 54 -230 148 -412
+297 -573 207 -224 524 -362 833 -362 l72 0 0 -262 c0 -287 -8 -343 -58 -446
+-37 -77 -119 -162 -193 -202 -129 -68 -43 -64 -1326 -67 -1282 -4 -1242 -6
+-1373 59 -138 67 -248 219 -270 373 -6 45 -10 800 -9 2105 0 2252 -4 2130 64
+2259 47 88 72 115 325 336 112 99 245 216 295 261 49 44 185 163 300 264 116
+102 531 468 924 815 1211 1068 1322 1164 1377 1190 128 61 268 59 392 -4 47
+-24 144 -108 1392 -1196 491 -429 1319 -1150 1516 -1320 253 -219 292 -258
+333 -334 66 -124 61 39 59 -2298 l-3 -2118 -22 -58 c-49 -129 -155 -239 -284
+-295 l-64 -27 -1255 -5 c-1246 -5 -1255 -5 -1300 -26 -95 -44 -150 -127 -150
+-229 0 -76 24 -128 83 -182 85 -78 -2 -74 1398 -71 l1244 3 95 26 c52 15 126
+41 164 58 236 107 441 325 526 560 69 191 64 -4 68 2311 2 1440 0 2128 -8
+2201 -13 133 -40 229 -95 348 -91 190 -129 230 -700 727 -220 191 -539 470
+-710 619 -391 341 -895 781 -1089 950 -82 72 -296 258 -475 414 -379 329 -365
+318 -467 376 -164 94 -377 137 -563 114z m191 -5069 l899 0 -3 -557 -3 -558
+-28 -80 c-85 -241 -270 -407 -506 -451 -67 -13 -152 -15 -484 -12 l-402 4 -80
+27 c-172 58 -308 174 -384 328 -76 156 -75 143 -78 709 -2 278 0 524 3 547 5
+40 7 42 42 46 20 3 57 3 81 1 24 -2 448 -4 943 -4z"/></g></g></svg></div>
+      </div>
+      <div class="cap">Social avatar · app tile + round</div>
+    </div>
+    <div class="app">
+      <div class="sign">
+        <div style="width:58px;height:58px;color:var(--forest)"><svg class="um" viewBox="0 0 1254 1254"><use href="#mark"/></svg></div>
+        <div class="t">Now building<br/>in this street.</div>
+        <div class="s">Brokered by The Property Plug · thepropertyplug.com.au</div>
+      </div>
+      <div class="cap">Site signage</div>
+    </div>
+  </div>
+</div></section>
+
+<section id="rules"><div class="wrap">
+  <div class="kicker">08 · Rules</div>
+  <h2 class="h-section" style="margin-top:16px">Hold the <span class="hl">line.</span></h2>
+  <div class="dd">
+    <div class="rc do"><h4>Do</h4><ul><li>Default to white with ink type and hairline-bordered cards.</li><li>Forest anchors, green is the single action colour.</li><li>Frame every price as "from".</li><li>Set display in Inter Tight 900 all caps, tight tracking.</li><li>Run mono receipts and spec labels in corners.</li><li>Australian spelling for client-facing copy.</li></ul></div>
+    <div class="rc no"><h4>Don't</h4><ul><li>Don't flood the page with green, it only works when scarce.</li><li>Don't mix in the Rank On Maps palette or pin logo.</li><li>Don't show rep commission, margin or prestart credit. Ever.</li><li>Don't use sterile stock or skyline filler.</li><li>Don't use em-dashes, semicolons or AI-slop flourishes.</li><li>Don't set the editorial italic more than once per piece.</li></ul></div>
+  </div>
+</div></section>
+
+<section id="assets"><div class="wrap">
+  <div class="kicker">09 · Assets</div>
+  <h2 class="h-section" style="margin-top:16px">Grab the <span class="hl">files.</span></h2>
+  <p class="lead">Everything lives in the source kit. SVG for anything scalable, PNG for quick drops, tokens for builds.</p>
+  <div class="assets">
+    <div class="a"><span class="k">Logo · mark (ink / forest / paper)</span><span class="v">logo/mark-*.svg + .png</span></div>
+    <div class="a"><span class="k">Logo · horizontal lockup</span><span class="v">logo/lockup-horizontal.svg</span></div>
+    <div class="a"><span class="k">App icon / social avatar</span><span class="v">logo/app-icon.svg</span></div>
+    <div class="a"><span class="k">Favicon + Apple touch icon</span><span class="v">logo/favicon-32.png · apple-touch-icon.png</span></div>
+    <div class="a"><span class="k">CSS variables + components</span><span class="v">tokens.css</span></div>
+    <div class="a"><span class="k">Machine-readable tokens</span><span class="v">tokens.json</span></div>
+    <div class="a"><span class="k">This guidelines page</span><span class="v">brand.html</span></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="big">The Property<br/><span class="hl">Plug.</span></div>
+  <div class="meta">Brand Kit v2.0 · 2026<br/>Daniel Girmay · Perth WA<br/>THEPROPERTYPLUG.COM.AU<br/>Separate identity from Rank On Maps</div>
+</div></footer>
+
+
+<div id="tppgate" style="position:fixed;inset:0;z-index:99999;background:#fff;display:flex;align-items:center;justify-content:center;font-family:'Inter',system-ui,sans-serif">
+  <div style="width:100%;max-width:380px;padding:32px">
+    <div style="width:46px;height:46px;color:#16201C;margin-bottom:22px"><svg viewBox="0 0 1254 1254"><use href="#mark"/></svg></div>
+    <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:#1F4D3C">Private · The Property Plug</div>
+    <h1 style="font-family:'Inter Tight',sans-serif;font-weight:900;font-size:34px;letter-spacing:-.03em;text-transform:uppercase;margin:8px 0 6px;color:#16201C">Brand Kit</h1>
+    <p style="font-size:14px;color:#5A6661;margin:0 0 20px">Enter the access code to continue.</p>
+    <form id="tppform" autocomplete="off" style="display:flex;flex-direction:column;gap:10px">
+      <input id="tpppw" type="password" placeholder="ACCESS CODE" autofocus style="font-family:'JetBrains Mono',monospace;font-size:14px;letter-spacing:.06em;padding:14px 16px;border:1px solid rgba(22,32,28,.26);outline:none"/>
+      <button type="submit" style="font-family:'Inter Tight',sans-serif;font-weight:900;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:14px;background:#1FC76A;color:#16201C;border:0;cursor:pointer">Enter</button>
+      <div id="tpperr" style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#A24A33;min-height:15px"></div>
+    </form>
+  </div>
+</div>
+<script>
+(function(){
+  var H="1d91ff281608d316918773feb7a95427ad2aaab76f788f2b8bd661c16d93430a", g=document.getElementById("tppgate");
+  function unlock(){ g.parentNode.removeChild(g); document.body.style.overflow=""; }
+  if(localStorage.getItem("tpp_brand_ok")==="1"){ unlock(); return; }
+  document.body.style.overflow="hidden";
+  async function sha(s){ var b=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(s)); return Array.from(new Uint8Array(b)).map(x=>x.toString(16).padStart(2,"0")).join(""); }
+  document.getElementById("tppform").addEventListener("submit",async function(e){
+    e.preventDefault();
+    var v=document.getElementById("tpppw").value;
+    if(await sha(v)===H){ localStorage.setItem("tpp_brand_ok","1"); unlock(); }
+    else{ document.getElementById("tpperr").textContent="Incorrect code"; }
+  });
+})();
+</script>
+
+</body></html>
